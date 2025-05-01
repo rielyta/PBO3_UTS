@@ -60,7 +60,7 @@ public class Perusahaan {
         return removed;
     }
     
-    //Amnul seluruh data karyawan
+    //Ambil seluruh data karyawan
     public static List<Karyawan> SemuaKaryawan() {
         return dataKaryawan;
     }

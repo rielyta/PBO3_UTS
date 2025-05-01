@@ -27,7 +27,7 @@ public class LotreBoard {
             }
         }
     }
-
+    // menampilkan papan
     public void displayBoard() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
@@ -44,16 +44,16 @@ public class LotreBoard {
             System.out.println();
         }
     }
-
+    //tebakan
     public boolean guess(int row, int col) {
         revealed[row][col] = true;
         return data[row][col] != 1;
     }
-
+    //cek kotak udah pernah dibuka
     public boolean Revealed(int row, int col) {
         return revealed[row][col];
     }
-
+    //cek permainan berakhir
     public boolean GameOver() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
